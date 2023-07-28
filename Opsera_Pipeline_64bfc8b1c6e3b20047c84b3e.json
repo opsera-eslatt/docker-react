@@ -1,0 +1,583 @@
+{
+  "project": {
+    "name": "",
+    "project_id": ""
+  },
+  "workflow": {
+    "source": {
+      "secondary_branches": [],
+      "name": "",
+      "service": "github",
+      "accountId": "64c3bd394da8fa0012ec8b60",
+      "workspace": "",
+      "workspaceName": "",
+      "repository": "docker-react",
+      "repoId": "opsera-eslatt/docker-react",
+      "projectId": "opsera-eslatt/docker-react",
+      "gitUrl": "https://github.com/opsera-eslatt/docker-react",
+      "sshUrl": "git@github.com:opsera-eslatt/docker-react.git",
+      "branch": "master",
+      "key": "",
+      "trigger_active": false,
+      "isPushEvent": false,
+      "isPrEvent": false,
+      "isMonitored": false,
+      "prCreatedEvent": true,
+      "prApprovedEvent": false,
+      "gitExportEnabled": true,
+      "gitExportPath": "",
+      "dynamicSettings": false,
+      "allowDynamicSettingsInUi": false,
+      "enableBranchSwitch": false
+    },
+    "schedule": {
+      "start_date": null,
+      "end_date": null,
+      "frequency": ""
+    },
+    "last_step": {
+      "success": {
+        "step_id": "646d1af201777800c9a57fe1",
+        "activity_id": "64c150614e44f5002e68129f",
+        "status": "success",
+        "updatedAt": "2023-07-26T16:57:05.319Z"
+      },
+      "status": "stopped",
+      "step_id": "646d1af201777800c9a57fe1",
+      "check_count": 1
+    },
+    "last_run": {
+      "completed": "2023-07-26T16:57:15.609Z",
+      "run_count": 10,
+      "status": "success"
+    },
+    "plan": [
+      {
+        "tool": {
+          "tool_identifier": "gitscraper",
+          "configuration": {
+            "gitFilePath": "",
+            "repository": "docker-react",
+            "gitBranch": "master",
+            "gitToolId": "646bd9ba611e9300a2a72210",
+            "repoId": "opsera-eslatt/docker-react",
+            "sshUrl": "git@github.com:opsera-eslatt/docker-react.git",
+            "gitUrl": "https://github.com/opsera-eslatt/docker-react",
+            "bitbucketWorkspace": "",
+            "bitbucketWorkspaceName": "",
+            "type": "git_custodian",
+            "commits": "",
+            "threshold": 0,
+            "excludeSecrets": [],
+            "excludeFiles": [],
+            "secretsException": false,
+            "filesException": false,
+            "service": "github",
+            "workspace": "",
+            "projectId": "opsera-eslatt/docker-react"
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          }
+        },
+        "trigger": [],
+        "type": [
+          "code-scan"
+        ],
+        "notification": [],
+        "tags": [
+          {
+            "type": "tool",
+            "value": "playground"
+          }
+        ],
+        "_id": "646f7ef458aee900fc6ca14f",
+        "name": "Git Custodian",
+        "description": "",
+        "active": false,
+        "updatedAt": "2023-05-25T15:29:56.643Z",
+        "orchestration_type": "standard"
+      },
+      {
+        "tool": {
+          "tool_identifier": "sonar",
+          "configuration": {
+            "jobType": "CODE SCAN",
+            "toolConfigId": "63a14f7274b10c00444e8be8",
+            "jenkinsUrl": "https://jenkins-nekisj04.prodqa.opsera.io/",
+            "jenkinsPort": "",
+            "jUserId": "admin",
+            "jAuthToken": "",
+            "jobName": "CODE SCAN_646bd91f611e9300a2a71efb_646f7f161a468800959f29bf",
+            "toolJobId": "63a15045532ad9002c45abcc",
+            "toolJobType": [
+              "CODE SCAN"
+            ],
+            "projectKey": "cisco.react",
+            "projectName": "cisco.react",
+            "accountUsername": "",
+            "projectId": "opsera-eslatt/docker-react",
+            "defaultBranch": "master",
+            "dockerName": "",
+            "dockerTagName": "",
+            "buildType": "gradle",
+            "gitToolId": "646bd9ba611e9300a2a72210",
+            "repoId": "opsera-eslatt/docker-react",
+            "gitUrl": "https://github.com/opsera-eslatt/docker-react",
+            "sshUrl": "git@github.com:opsera-eslatt/docker-react.git",
+            "service": "github",
+            "gitCredential": "GitHub eslatt",
+            "gitUserName": "ed.slatt@opsera.us",
+            "repository": "docker-react",
+            "branch": "master",
+            "sonarSourcePath": "",
+            "workspace": "",
+            "workspaceName": "",
+            "sonarToolConfigId": "645bc15e812ef80012d9a38d",
+            "workspaceDeleteFlag": false,
+            "jobDescription": "",
+            "job_type": "opsera-job",
+            "gitBranch": "master",
+            "successThreshold": "",
+            "isScanArtifact": false,
+            "stepIdXml": "",
+            "commands": "",
+            "clientSideThreshold": false,
+            "thresholdCompliance": [],
+            "thresholdRating": [],
+            "saveSonarParameters": false,
+            "sonarCustomParameters": [],
+            "agentLabels": "generic-linux",
+            "buildToolVersion": "6.3",
+            "sonarUrl": "https://sonarqube-pl6uvmp1.playground.opsera.io",
+            "sonarUserId": "admin",
+            "gitCommitId": "04687aac46d0bebde5626bae6079a75ac3e293bb"
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          },
+          "job_type": "opsera-job"
+        },
+        "trigger": [],
+        "type": [
+          "code-scan"
+        ],
+        "notification": [],
+        "tags": [
+          {
+            "type": "tool",
+            "value": "playground"
+          }
+        ],
+        "_id": "646f7f161a468800959f29bf",
+        "name": "Sonar Cube",
+        "description": "",
+        "active": false,
+        "updatedAt": "2023-05-25T15:30:30.525Z",
+        "orchestration_type": "standard"
+      },
+      {
+        "tool": {
+          "tool_identifier": "jenkins",
+          "configuration": {
+            "jobType": "BUILD",
+            "toolConfigId": "63a14f7274b10c00444e8be8",
+            "jenkinsUrl": "https://jenkins-nekisj04.prodqa.opsera.io/",
+            "jenkinsPort": "",
+            "jUserId": "admin",
+            "jAuthToken": "",
+            "jobName": "BUILD_64bfc8b1c6e3b20047c84b3e_5ec7c8cedc73d971e2860b68",
+            "toolJobId": "63a14fef74b10c00444e8dfa",
+            "toolJobType": [
+              "BUILD"
+            ],
+            "rollbackBranchName": "",
+            "stepIdXML": "",
+            "sfdcDestToolId": "",
+            "destAccountUsername": "",
+            "sfdcToolId": "",
+            "accountUsername": "",
+            "projectId": "opsera-eslatt/docker-react",
+            "defaultBranch": "master",
+            "dockerName": "react-sample",
+            "useDockerDynamicName": false,
+            "dockerDynamicName": "",
+            "dockerTagName": "b7d8ad2fe6236972b9b3b4d60427b2a2023",
+            "dockerPath": "",
+            "buildType": "docker",
+            "gitToolId": "646bd9ba611e9300a2a72210",
+            "repoId": "opsera-eslatt/docker-react",
+            "gitUrl": "https://github.com/opsera-eslatt/docker-react",
+            "sshUrl": "git@github.com:opsera-eslatt/docker-react.git",
+            "service": "github",
+            "gitCredential": "GitHub eslatt",
+            "gitUserName": "ed.slatt@opsera.us",
+            "repository": "docker-react",
+            "branch": "master",
+            "isOrgToOrg": false,
+            "isFullBackup": false,
+            "sfdcUnitTestType": "",
+            "workspace": "",
+            "agentLabels": "generic-linux",
+            "isNewBranch": false,
+            "isManualRollBackBranch": false,
+            "hasUpstreamBranch": false,
+            "workspaceDeleteFlag": true,
+            "gitBranch": "master",
+            "customParameters": [],
+            "terraformStepId": "",
+            "useTerraformOutput": false,
+            "job_type": "opsera-job",
+            "xcodeVersion": "",
+            "dynamicTag": true,
+            "dockerTagType": "commit_sha",
+            "dockerDynamicTagName": "",
+            "specifyCommitIdChar": true,
+            "commitIdCharDirection": "suffix",
+            "commitIdCharLimit": 35,
+            "runtimeArguments": "",
+            "dependencyType": "",
+            "ruleIds": [],
+            "useBuildStepResource": false,
+            "buildStepId": "",
+            "commands": "",
+            "environmentVariables": [],
+            "enableQuickDeploy": false,
+            "ignoreWarning": false,
+            "filePath": "",
+            "schemeName": "",
+            "projectWorkspace": "",
+            "configurationType": "",
+            "scriptType": "opsera",
+            "developerTeamId": "",
+            "credentailsId": "",
+            "autoScaleEnable": true,
+            "workspaceName": "",
+            "jobDescription": "",
+            "buildToolVersion": "6.3",
+            "gradleTask": "",
+            "mavenTask": "",
+            "customMavenSettings": false,
+            "scriptId": "",
+            "buildTool": "docker",
+            "commandLineArgs": "",
+            "dockerSecrets": [],
+            "gitCommitId": "55769b7d8ad2fe6236972b9b3b4d60427b2a2023"
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          },
+          "job_type": "opsera-job",
+          "job": null
+        },
+        "last_status": {
+          "data": {
+            "runCount": 10,
+            "action": "START",
+            "dockerName": "react-sample",
+            "dockerTagName": "b7d8ad2fe6236972b9b3b4d60427b2a2023",
+            "gitCommitId": "55769b7d8ad2fe6236972b9b3b4d60427b2a2023",
+            "status": "SUCCESS",
+            "message": "Job is Successful",
+            "buildNumber": 9,
+            "jobName": "BUILD_64bfc8b1c6e3b20047c84b3e_5ec7c8cedc73d971e2860b68"
+          },
+          "updatedAt": "2023-07-26T16:55:19.803Z"
+        },
+        "trigger": [],
+        "type": [
+          "build"
+        ],
+        "notification": [],
+        "tags": [
+          {
+            "type": "tool",
+            "value": "playground"
+          }
+        ],
+        "_id": "5ec7c8cedc73d971e2860b68",
+        "name": "Build",
+        "description": "",
+        "active": true,
+        "updatedAt": "2020-05-22T12:42:54.717Z",
+        "orchestration_type": "standard"
+      },
+      {
+        "tool": {
+          "tool_identifier": "azure_acr_push",
+          "configuration": {
+            "toolConfigId": "63a14f7274b10c00444e8be8",
+            "toolName": "Opsera-Playground Jenkins",
+            "toolJobId": "648724362b065f008841cbbd",
+            "jobType": "AZURE_DOCKER_PUSH",
+            "toolJobName": "ACR Push",
+            "buildType": "docker",
+            "agentLabels": "",
+            "azureToolConfigId": "648b86758acae9003a5273cf",
+            "buildStepId": "5ec7c8cedc73d971e2860b68",
+            "azureRegistryName": "edslattacr",
+            "newRepo": true,
+            "azureRepoName": "react-demo",
+            "useRunCount": false,
+            "resource": "https://management.azure.com",
+            "awsToolConfigId": "",
+            "ecrRepoName": "",
+            "acrLoginUrl": "edslattacr.azurecr.io",
+            "autoScaleEnable": true,
+            "toolType": "azure",
+            "azureCredentialId": "64beb659034fa5006ea17301",
+            "jobName": "AZURE_DOCKER_PUSH_64bfc8b1c6e3b20047c84b3e_64beb66e05ba6c002d2279e2"
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          },
+          "job_type": "azure_docker_push",
+          "job": null
+        },
+        "last_status": {
+          "data": {
+            "runCount": 10,
+            "action": "START",
+            "status": "SUCCESS",
+            "message": "Job is Successful",
+            "buildNumber": 7,
+            "jobName": "AZURE_DOCKER_PUSH_64bfc8b1c6e3b20047c84b3e_64beb66e05ba6c002d2279e2"
+          },
+          "updatedAt": "2023-07-26T16:56:22.185Z"
+        },
+        "trigger": [],
+        "type": [
+          "publish"
+        ],
+        "notification": [],
+        "tags": [
+          {
+            "type": "pipeline",
+            "value": "push-to-acr-redo_64beb66e05ba6c002d2279e2"
+          }
+        ],
+        "_id": "64beb66e05ba6c002d2279e2",
+        "name": "Push to ACR",
+        "description": "",
+        "active": true,
+        "updatedAt": "2023-07-24T17:35:42.811Z",
+        "orchestration_type": "standard"
+      },
+      {
+        "tool": {
+          "tool_identifier": "anchore-integrator",
+          "configuration": {
+            "anchoreToolConfigId": "64b98da0b19aee0012fce4ca",
+            "anchoreUrl": "https://anchore-anshgzre.playground.opsera.io/v1/",
+            "accountUsername": "admin",
+            "ecrPushStepId": "64beb66e05ba6c002d2279e2",
+            "clientSideThreshold": false,
+            "thresholdCompliance": []
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          },
+          "job": null
+        },
+        "trigger": [],
+        "type": [
+          "container-scan"
+        ],
+        "notification": [],
+        "tags": [
+          {
+            "type": "pipeline",
+            "value": "anchore-scan_64bfc92a8896f7006ee1edb3"
+          }
+        ],
+        "_id": "64bfc92a8896f7006ee1edb3",
+        "name": "Anchore Scan",
+        "description": "",
+        "active": false,
+        "updatedAt": "2023-07-25T13:07:54.427Z",
+        "orchestration_type": "standard"
+      },
+      {
+        "tool": {
+          "tool_identifier": "approval",
+          "configuration": {
+            "sendCustomMessage": true,
+            "message": "CISCO Node AWS EKS Pipeline Approval",
+            "contact": "support@opsera.io"
+          },
+          "threshold": {
+            "type": "user-approval",
+            "value": {
+              "user": "63a13a030794ec0045af19da",
+              "email": "opsera@playground.io",
+              "approved": true,
+              "approved_on": "2023-07-25T12:45:28.117Z",
+              "message": "good to go"
+            }
+          }
+        },
+        "trigger": [],
+        "type": [
+          "interaction-gate"
+        ],
+        "notification": [
+          {
+            "type": "email",
+            "addresses": [
+              "ed.slatt@opsera.io"
+            ],
+            "event": "all",
+            "enabled": true,
+            "logEnabled": false
+          },
+          {
+            "type": "slack",
+            "channel": "test-notifications",
+            "toolId": "645be295324d3200fcbd3d55",
+            "event": "all",
+            "enabled": true,
+            "logEnabled": false
+          },
+          {
+            "type": "jira",
+            "jiraBoard": "",
+            "event": "all",
+            "jiraToolId": "",
+            "jiraProject": "",
+            "jiraPriority": "",
+            "jiraSprint": "",
+            "jiraParentTicket": "",
+            "jiraPrimaryAssignee": "",
+            "jiraSecondaryAssignees": [],
+            "enabled": false
+          },
+          {
+            "type": "teams",
+            "event": "all",
+            "toolId": "",
+            "enabled": false,
+            "logEnabled": false
+          },
+          {
+            "type": "servicenow",
+            "event": "all",
+            "toolId": "",
+            "serviceNowUserId": "",
+            "serviceNowGroupId": "",
+            "enabled": false
+          },
+          {
+            "type": "gchat",
+            "event": "all",
+            "toolId": "",
+            "enabled": false,
+            "logEnabled": false
+          }
+        ],
+        "tags": [
+          {
+            "type": "tool",
+            "value": "playground"
+          }
+        ],
+        "_id": "646f7d6f0aa95400fd9aec3c",
+        "name": "Approval",
+        "description": "",
+        "active": false,
+        "updatedAt": "2023-05-25T15:23:27.666Z",
+        "orchestration_type": "standard"
+      },
+      {
+        "tool": {
+          "tool_identifier": "argo",
+          "configuration": {
+            "existingContent": "image",
+            "dockerStepID": "64beb66e05ba6c002d2279e2",
+            "gitFilePath": "yaml/deployment.yaml",
+            "gitRepository": "docker-react-argo",
+            "defaultBranch": "main",
+            "gitWorkspace": "",
+            "type": "github",
+            "gitToolId": "646bd9ba611e9300a2a72210",
+            "toolConfigId": "645bc083812ef80012d9a371",
+            "toolUrl": "https://argocd-plv9y2p1.playground.opsera.io",
+            "gitUrl": "https://github.com/opsera-eslatt/docker-react-argo",
+            "sshUrl": "git@github.com:opsera-eslatt/docker-react-argo.git",
+            "userName": "admin",
+            "applicationName": "react-app-aks-2",
+            "gitRepositoryID": "opsera-eslatt/docker-react-argo",
+            "bitbucketWorkspace": "",
+            "bitbucketWorkspaceName": "",
+            "rollbackEnabled": false,
+            "repositoryTag": "",
+            "dynamicVariables": false,
+            "applicationCluster": "",
+            "yamlPath": "",
+            "kustomizeFlag": false,
+            "imageUrl": "",
+            "isBlueGreenDeployment": false,
+            "dockerStepType": "azure_acr_push",
+            "customParameterId": "",
+            "imageReference": "",
+            "customImageTag": false,
+            "platform": "",
+            "azureToolConfigId": "",
+            "azureCredentialId": "",
+            "resource": "https://management.azure.com",
+            "azureRegistryName": "",
+            "azureRepoName": "",
+            "acrLoginUrl": "",
+            "awsToolConfigId": "",
+            "ecrRepoName": ""
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          },
+          "job": null
+        },
+        "trigger": [],
+        "type": [
+          "deploy"
+        ],
+        "notification": [],
+        "tags": [],
+        "_id": "646d1af201777800c9a57fe1",
+        "name": "Deploy",
+        "description": "",
+        "active": true,
+        "updatedAt": "2023-05-23T19:58:42.215Z",
+        "orchestration_type": "standard"
+      }
+    ],
+    "run_count": 10
+  },
+  "tags": [],
+  "type": [],
+  "_id": "64bfc8b1c6e3b20047c84b3e",
+  "owner": "63a13a030794ec0045af19da",
+  "roles": [
+    {
+      "role": "administrator",
+      "user": "",
+      "group": "admin-group",
+      "site_role": ""
+    }
+  ],
+  "organizationName": "opsera-playground",
+  "account": "org139-acc0",
+  "name": "Azure Code to Cloud - ACR AKS - Demo",
+  "template": "5ec7c8cedc73d9532e860b67",
+  "templateIdentifier": "",
+  "description": "Create a new template from scratch.",
+  "active": true,
+  "__v": 0,
+  "owner_name": "Opsera Playground",
+  "createdAt": "2023-07-25T13:05:53.449Z",
+  "updatedAt": "2023-07-28T13:08:26.928Z"
+}
